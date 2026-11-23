@@ -1,4 +1,4 @@
-# 个人所得税 App 界面展示（V2.0）
+# 个人所得税 App 界面展示（V2.0.0）
 
 个人所得税界面与功能复刻学习演示项目的**展示站**，还原首页、收入纳税明细、我的页面、授权试用、激活、意见反馈等主要页面与交互。企业信息、收入信息、收入纳税明细、任职受雇企业数量均可自定义，明细记录支持增删改；业务数据默认仅保存在本机。
 
@@ -8,12 +8,13 @@
 
 ## 这个仓库是什么
 
-和 [geshui2026](https://github.com/geshuiapp/geshui2026) 一样，这里只放**展示页面、使用说明、免责声明和已脱敏截图**，方便用户了解界面和交互。
+原 [geshui2026](https://github.com/geshuiapp/geshui2026) 展示页已停止展示，V2.0.0 统一在本仓库展示。这里只放**展示页面、使用说明、免责声明和已脱敏截图**，方便用户了解界面和交互。
 
 
 ## 页面入口
 
 - [首页 / 界面预览](https://geshuiapp.github.io/geshui2027/)
+- [V2.0.0 发布页](https://github.com/geshuiapp/geshui2027/releases/tag/v2.0.0)
 - [用户使用说明书](https://geshuiapp.github.io/geshui2027/guide.html)
 - [完整免责声明](https://geshuiapp.github.io/geshui2027/disclaimer.html)
 - [授权状态查询](https://geshuiapp.github.io/geshui2027/query.html)

@@ -330,7 +330,7 @@ img { max-width: 100%; }
   <div class="en">Individual Income Tax</div>
   <p class="tagline">V2.0 页面与交互展示 · 纯展示站 · 不含内核代码</p>
   <div class="badges">
-    <span class="badge">🖼 界面截图已脱敏</span>
+    <span class="badge">🏷 V2.0.0 · versionCode 28</span>
     <span class="badge">🔐 不含源码 / 服务端 / APK</span>
   </div>
   <div class="hero-actions">
@@ -415,9 +415,9 @@ img { max-width: 100%; }
     <div class="ix-wrap">
       <div class="ix-glow"></div>
       <div class="ix-head">
-        <div class="ix-eyebrow">INTERACTION MAP · V2.0</div>
+        <div class="ix-eyebrow">INTERACTION MAP · V2.0.0</div>
         <h2 class="ix-title">全站交互总表</h2>
-        <p class="ix-sub">按 V2.0.0 说明书与已确认页面整理。很多操作没有独立按钮——长按文字、长按卡片、点热区才会出现，点标签即可筛选。</p>
+        <p class="ix-sub">只列 V2.0.0 说明书与已确认截图能对上的页面路径；未列出的交互以实际 App 为准。长按文字、长按卡片、点热区才会出现的操作单独标出。</p>
         <div class="ix-stats">
           <div class="ix-stat"><b data-num="0">0</b><span>功能模块</span></div>
           <div class="ix-stat"><b data-num="0">0</b><span>可操作交互点</span></div>
@@ -428,7 +428,7 @@ img { max-width: 100%; }
       <div class="ix-grid" id="ixGrid"></div>
       <div class="ix-foot">
         <span class="ix-dot"></span>
-        <span>带「长按」标签的项没有按钮，按住约半秒松手即可</span>
+        <span>按 V2.0.0 口径整理，已剔除 2026 的自助迁移/解绑路径；带「长按」标签的项没有按钮，按住约半秒松手即可</span>
         <a href="guide.html#九主界面与五个标签" class="ix-more">查看完整说明书 →</a>
       </div>
     </div>
@@ -638,9 +638,9 @@ var DATA = [
       ['改家庭成员数量', 'tap', '点统计卡最左那格', '数字输入弹窗'],
       ['看任职受雇', 'tap', '点统计卡中间那格', '跳到任职受雇列表'],
       ['改银行卡数量', 'tap', '点统计卡最右那格', '数字输入弹窗'],
-      ['我要咨询', 'tap', '我的 → 菜单「我要咨询」', '打开授权管理，查看当前授权与续期入口'],
+      ['我要咨询', 'tap', '我的 → 菜单「我要咨询」', '打开授权管理，显示激活状态、到期时间与续期/升级入口'],
       ['关于 & 更新', 'tap', '菜单「关于&更新」', '进关于页（版本、反馈、图片管理）'],
-      ['预留菜单', 'info', '切换关怀版 / 安全中心 / 帮助中心', '目前点了没动作，属预留位']
+      ['预留菜单', 'info', '切换关怀版 / 安全中心 / 帮助中心', '属预留入口，具体以实际页面为准']
     ]
   },
   {
@@ -676,7 +676,7 @@ var DATA = [
     name: 'V2.0 授权与换机', items: [
       ['后台一次性换机', 'tap', '旧设备码 + 新设备码 + 邮箱发管理员', '后台预检后改绑，新设备重新激活，原设备失效'],
       ['换机不迁业务数据', 'info', '换手机 / 恢复出厂 / 设备码变化', '本地业务数据不随授权迁移，重要内容先截图留档'],
-      ['后台停用 / 改期', 'info', '管理员后台操作', '设备联网后生效；断网期间按本地到期日判定'],
+      ['后台停用 / 改期', 'info', '管理员后台操作', '设备联网后同步；断网期间仍按本地到期时间显示'],
       ['查询授权状态', 'tap', '本展示站 query.html 输入设备码', '只读到期信息，不涉及账号与税务数据'],
       ['一码一设备', 'info', '转售、共享或伪造激活码', '授权无效，请勿把激活码发给他人']
     ]
