@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>用户使用说明书 · 个人所得税 APP</title>
+<style>
+  :root { --primary:#1e5eff; --text:#1f2937; --muted:#6b7280; --line:#e5e7eb; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+    background:#f5f7fa; color:var(--text); line-height:1.85; font-size:15.5px;
+    padding:28px 16px 60px;
+  }
+  .wrap { max-width:900px; margin:0 auto; background:#fff; border-radius:16px; padding:36px 40px 48px; box-shadow:0 6px 28px rgba(15,26,51,.08); }
+  .back { display:inline-block; font-size:13.5px; color:var(--primary); text-decoration:none; font-weight:600; margin-bottom:14px; }
+  .doctitle { font-size:25px; font-weight:800; letter-spacing:.5px; margin-bottom:6px; }
+  .docmeta { font-size:13px; color:var(--muted); margin-bottom:26px; }
+  h2 { font-size:19px; font-weight:800; margin:34px 0 12px; padding-left:11px; border-left:4px solid var(--primary); line-height:1.5; }
+  h3 { font-size:16px; font-weight:700; margin:22px 0 8px; color:#111827; }
+  p { margin:10px 0; }
+  ul, ol { margin:10px 0 12px 22px; }
+  li { margin:5px 0; }
+  table { width:100%; border-collapse:collapse; margin:14px 0 18px; font-size:14px; }
+  th, td { border:1px solid var(--line); padding:9px 11px; text-align:left; vertical-align:top; }
+  th { background:#f2f6ff; font-weight:700; white-space:nowrap; }
+  tbody tr:nth-child(even) { background:#fbfcfe; }
+  blockquote { background:#f2f6ff; border-left:3px solid var(--primary); padding:11px 14px; margin:14px 0; color:#374151; border-radius:0 8px 8px 0; }
+  code { background:#f3f4f6; padding:2px 6px; border-radius:5px; font-size:13.5px; }
+  a { color:var(--primary); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  hr { border:none; border-top:1px solid var(--line); margin:26px 0; }
+  .foot { margin-top:34px; padding-top:16px; border-top:1px solid var(--line); font-size:13px; color:var(--muted); text-align:center; }
+  @media (max-width:640px) {
+    body { padding:14px 10px 40px; font-size:15px; }
+    .wrap { padding:22px 16px 30px; border-radius:12px; }
+    .doctitle { font-size:21px; }
+    h2 { font-size:17px; }
+    table { font-size:12.8px; }
+    th, td { padding:7px 8px; }
+    th { white-space:normal; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="./index.html">← 返回首页</a>
+  <div class="doctitle">个人所得税 APP 用户使用说明书</div>
+  <div class="docmeta">V2.0 展示版 · 2026-11-23 · 面向首次使用的新用户</div>
+
+<blockquote>
+<p>适用展示版本 <strong>v2.0.0</strong>（versionCode 28）· 更新于 2026-11-23</p>
+<p>本仓库是<strong>纯展示站</strong>，只放页面、说明书、免责声明和已脱敏截图；<strong>不含 App 内核代码、授权服务端代码或安装包</strong>。</p>
+<p>页面截图中的姓名、纳税人识别号、单位名称、统一社会信用代码、银行卡号和联系方式均已做占位或星号处理。</p>
+</blockquote>
+<p>本说明书按「首次启动到日常使用」的顺序编写，第一次用的朋友照着往下走即可。页面上的功能可能随版本调整，若与说明书不一致，以 App 内实际显示为准。</p>
+<hr />
+<h2 id="一分钟上手">一分钟上手</h2>
+<table>
+<thead>
+<tr>
+<th>步骤</th>
+<th>做什么</th>
+<th>大概多久</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>打开 App；本展示站不提供安装包</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2</td>
+<td>首次打开，读完免责声明点「同意并继续」</td>
+<td>30 秒</td>
+</tr>
+<tr>
+<td>3</td>
+<td>有激活码就粘贴激活；没有先领 15 分钟免费试用或联系管理员购买</td>
+<td>1 分钟</td>
+</tr>
+<tr>
+<td>4</td>
+<td>进入主界面，开始用收入明细、我的等页面</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="目录">目录</h2>
+<ol>
+<li><a href="#一这是什么不是什么">这是什么，不是什么</a></li>
+<li><a href="#二展示站说明">展示站说明</a></li>
+<li><a href="#三首次启动先过免责声明">首次启动：先过免责声明</a></li>
+<li><a href="#四启动后的三种状态">启动后的三种状态</a></li>
+<li><a href="#五免费试用">免费试用</a></li>
+<li><a href="#六激活与设备绑定">激活与设备绑定</a></li>
+<li><a href="#七换机迁移">换机迁移（联系管理员）</a></li>
+<li><a href="#八续期">续期</a></li>
+<li><a href="#九主界面与五个标签">主界面与五个标签</a></li>
+<li><a href="#十首页收入明细与我的">首页、收入明细与我的</a></li>
+<li><a href="#十一常见问题">常见问题</a></li>
+<li><a href="#十二注意事项">注意事项与隐私</a></li>
+</ol>
+<hr />
+<h2 id="一这是什么不是什么">一、这是什么，不是什么</h2>
+<p><strong>是什么</strong>：一款高保真复刻的个税 App 界面演示工具，可以查看收入纳税明细、维护专项附加扣除与任职受雇、练习年度汇算相关操作，业务数据默认只存在本机。</p>
+<p><strong>不是什么</strong>：</p>
+<ul>
+<li>不是国家税务总局或任何税务机关的官方应用，与官方<strong>没有任何关联</strong></li>
+<li>不能替代电子税务局等官方办税渠道，<strong>不能用于真实申报</strong></li>
+<li>计算结果不构成纳税申报、汇算清缴、财务记账的依据</li>
+<li>本展示站不是 App 源码仓库，不提供内核代码、服务端代码或安装包</li>
+</ul>
+<p>首次打开会强制阅读免责声明，同意后才能使用；不同意的请直接退出并卸载。</p>
+<hr />
+<h2 id="二展示站说明">二、展示站说明</h2>
+<p>这个仓库和 <a href="https://github.com/geshuiapp/geshui2026" target="_blank" rel="noopener">geshui2026</a> 一样，是给用户看界面和说明的展示页，不是开发仓库。</p>
+<table>
+<thead>
+<tr>
+<th>内容</th>
+<th>是否包含</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>首页、说明书、免责声明、授权查询</td>
+<td>包含</td>
+</tr>
+<tr>
+<td>已脱敏的界面截图</td>
+<td>包含</td>
+</tr>
+<tr>
+<td>App 内核代码、组件源码、构建脚本</td>
+<td><strong>不包含</strong></td>
+</tr>
+<tr>
+<td>授权服务端、后台管理页、KV 数据</td>
+<td><strong>不包含</strong></td>
+</tr>
+<tr>
+<td>APK、签名文件、安装包下载</td>
+<td><strong>不包含</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>展示截图只用于说明界面和交互，所有姓名、证件号、单位名称、信用代码、银行卡号和联系方式都已脱敏，不对应任何真实个人或企业。</p>
+</blockquote>
+<hr />
+<h2 id="三首次启动先过免责声明">三、首次启动：先过免责声明</h2>
+<p>第一次打开会出现整屏的免责声明卡片（深蓝底 + 白卡），包含 5 条要点：</p>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>要点</th>
+<th>意思</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>非官方工具</td>
+<td>个人独立开发，与税务机关无关，不能替代官方渠道</td>
+</tr>
+<tr>
+<td>2</td>
+<td>结果仅供参考</td>
+<td>算出来的数不作为申报依据</td>
+</tr>
+<tr>
+<td>3</td>
+<td>仅供个人学习</td>
+<td>禁止转售、二次分发、公开传播，禁止用于虚假申报等违法用途</td>
+</tr>
+<tr>
+<td>4</td>
+<td>授权与设备绑定</td>
+<td>激活码绑定本机，换机需联系管理员处理，请勿共享倒卖</td>
+</tr>
+<tr>
+<td>5</td>
+<td>付费与退款</td>
+<td>在线交付的数字化商品，购买前请先试用确认</td>
+</tr>
+</tbody>
+</table>
+<p>点「同意并继续」才能进入；点「不同意，退出」直接关闭应用。同意后出现约 2 秒启动页，随后按授权状态进入主界面或激活面板。</p>
+<hr />
+<h2 id="四启动后的三种状态">四、启动后的三种状态</h2>
+<ul>
+<li><strong>已激活且未过期</strong>：直接进入主界面</li>
+<li><strong>可领免费试用</strong>：进入主界面，顶部显示试用倒计时与「立即解锁」入口</li>
+<li><strong>未激活且无试用</strong>：停在激活 / 购买页，可粘贴在线激活码</li>
+</ul>
+<p>已激活用户断网时可用到本地到期日；后台停用、改期或换机在恢复联网后生效。</p>
+<hr />
+<h2 id="五免费试用">五、免费试用</h2>
+<p>新设备首次安装可领 <strong>15 分钟一次性试用</strong>，同一台设备只能领一次。</p>
+<ul>
+<li>试用期间需要保持联网校验</li>
+<li>断网超过 15 秒会暂停试用，恢复联网后继续</li>
+<li>倒计时按真实时间递减，关闭面板再打开不会重置</li>
+<li>试用结束后回到激活 / 购买页</li>
+</ul>
+<p>试用只用于确认界面和功能是否符合需求，不提供真实申报能力。</p>
+<hr />
+<h2 id="六激活与设备绑定">六、激活与设备绑定</h2>
+<p>V2.0 只保留在线激活码，格式为 <code>O|设备码|授权内容.ECC签名</code>，由管理员生成并通过服务端校验。</p>
+<ol>
+<li>打开激活 / 购买页，把管理员发来的整段 <code>O|</code> 激活码粘贴到输入框</li>
+<li>点「立即激活」，App 联网校验签名、设备绑定和是否已使用</li>
+<li>激活成功后显示到期时间并自动进入主界面</li>
+<li>同一台设备再次激活新码，会在原到期时间上叠加时长</li>
+</ol>
+<blockquote>
+<p>激活码与设备码绑定，一个码同一时间只服务一台设备；请勿手动改码、加空格或换行。首次激活必须联网，成功后断网可用到本地到期日。</p>
+</blockquote>
+<hr />
+<h2 id="七换机迁移">七、换机迁移（联系管理员）</h2>
+<p>V2.0 <strong>不在 App 内提供自助迁移或解绑入口</strong>。换新手机、恢复出厂设置或设备码变化时，由管理员在后台做一次性换机。</p>
+<h3>7.1 办理步骤</h3>
+<ol>
+<li><strong>新设备</strong>：打开 App，在激活 / 购买页复制新设备码</li>
+<li>把<strong>旧设备码、新设备码、购买邮箱</strong>发给管理员</li>
+<li>管理员在后台预检原授权状态，确认无异常后执行换机</li>
+<li>新设备重新激活；原设备随即失效</li>
+</ol>
+<h3>7.2 规则</h3>
+<table>
+<thead>
+<tr>
+<th>情况</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>只是重装、设备码没变</td>
+<td>直接输入原激活码即可，不走换机</td>
+</tr>
+<tr>
+<td>换机成功</td>
+<td>授权改绑到新设备，原设备立即失效</td>
+</tr>
+<tr>
+<td>本地业务数据</td>
+<td>不随授权迁移，换机前请自行截图或备份</td>
+</tr>
+<tr>
+<td>旧设备已损坏 / 已卖掉</td>
+<td>把旧设备码和新设备码发给管理员处理</td>
+</tr>
+<tr>
+<td>迁移次数</td>
+<td>以后台配置为准，次数用完需管理员重新处理</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>换机是「改绑」不是「复制」：迁移成功后原设备不能再使用，授权不会同时保留在两端。</p>
+</blockquote>
+<hr />
+<h2 id="八续期">八、续期</h2>
+<p>到期前想继续用，不需要换新设备，也不需要重新登录：</p>
+<ol>
+<li>联系管理员购买续期，说明原设备码或原激活码</li>
+<li>收到新的 <code>O|</code> 在线激活码</li>
+<li>在 App 的激活 / 购买页粘贴新码并激活</li>
+<li>同一设备会在原到期时间上叠加，不需要卸载重装</li>
+</ol>
+<p>后台停用、改期或换机在恢复联网后生效；已激活用户断网期间仍按本地到期日判定。</p>
+<hr />
+<h2 id="九主界面与五个标签">九、主界面与五个标签</h2>
+<p>底部五个标签：</p>
+<table>
+<thead>
+<tr>
+<th>标签</th>
+<th>实际内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>首页</strong></td>
+<td>底图式首页，搜索栏、公告、年度汇算专题、常用服务热区</td>
+</tr>
+<tr>
+<td><strong>待办</strong></td>
+<td>占位页：整页居中只显示「待办」两个字，暂无内容</td>
+</tr>
+<tr>
+<td><strong>办&amp;查</strong></td>
+<td>占位页：只显示「办&amp;查」，暂无内容</td>
+</tr>
+<tr>
+<td><strong>消息</strong></td>
+<td>占位页：只显示「消息」，暂无内容</td>
+</tr>
+<tr>
+<td><strong>我的</strong></td>
+<td>个人中心：登录入口、姓名 / 识别号、统计卡、菜单</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>待办、办&amp;查、消息这三页目前是空占位页，点进去只有一行字，不是加载失败。</p>
+</blockquote>
+<hr />
+<h2 id="十首页收入明细与我的">十、首页、收入明细与我的</h2>
+<h3>10.1 首页</h3>
+<ul>
+<li><strong>搜索栏</strong>：输入关键词搜索功能 / 服务</li>
+<li><strong>温馨提示</strong>：滚动公告栏，显示税务相关提醒</li>
+<li><strong>年度汇算专题</strong>：点击「进入专题页」查看</li>
+<li><strong>背景图</strong>：可在「关于」页上传替换、调整热区、恢复默认</li>
+</ul>
+<h3>10.2 收入纳税明细</h3>
+<ol>
+<li>首页点「收入纳税明细」进入，选择纳税年度与所得类型</li>
+<li>长按「年度」两个字可设置年份范围，长按右侧年份数字可换年份</li>
+<li>查询后顶部固定显示收入合计与已申报税额合计，下方按月列出记录卡</li>
+<li>长按记录卡可修改、复制、删除；该年度无记录时点空状态可新增</li>
+<li>修改表单字段较多，弹窗内可以上下滑动</li>
+</ol>
+<h3>10.3 我的</h3>
+<ul>
+<li><strong>未登录</strong>：灰色头像，点击「注册 / 登录」进入登录页</li>
+<li><strong>已登录</strong>：显示姓名、脱敏纳税人识别号、家庭成员 / 任职受雇 / 银行卡数量</li>
+<li><strong>个人信息</strong>：姓名、识别号长按可修改；专项附加扣除从首页卡片进入</li>
+<li><strong>任职受雇</strong>：长按企业卡片可修改、删除、复制</li>
+<li><strong>关于 &amp; 更新</strong>：版本号、意见反馈、购买 / 续期、首页背景图</li>
+</ul>
+<blockquote>
+<p>登录是演示逻辑：任意手机号 / 证件号 + 任意密码 + 滑块拖到最右即可登录，不校验真实身份，也不连接税务系统。</p>
+</blockquote>
+<hr />
+<h2 id="十一常见问题">十一、常见问题</h2>
+<table>
+<thead>
+<tr>
+<th>问题</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>第一次打开只有声明，没有主界面？</td>
+<td>这是免责声明门，必须点「同意并继续」；点「不同意，退出」会直接关闭应用。</td>
+</tr>
+<tr>
+<td>没有激活码能不能先用？</td>
+<td>新设备可领 15 分钟一次性试用；试用结束或已领过，需要联系管理员购买激活码。</td>
+</tr>
+<tr>
+<td>激活码提示已在其他设备使用？</td>
+<td>V2.0 不在 App 内自助迁移；把旧设备码、新设备码和邮箱发给管理员，由后台一次性换机。</td>
+</tr>
+<tr>
+<td>试用倒计时为什么老是从 15 秒重来？</td>
+<td>试用宽限时间按真实时间递减，关掉面板再打开会接着数，不会重置。</td>
+</tr>
+<tr>
+<td>数据存在哪里？</td>
+<td>业务数据默认只在本机；激活、试用、申请、反馈会联网传必要信息。首次激活、换码、换机到新设备会清理上一周期数据，续期不清。</td>
+</tr>
+<tr>
+<td>换手机前要准备什么？</td>
+<td>先复制旧设备码和新设备码，联系管理员办理换机；本地业务数据不会迁移，重要内容请先截图留档。</td>
+</tr>
+<tr>
+<td>能退款吗？</td>
+<td>软件授权是在线交付的数字化商品，不适用七日无理由退货；请先试用再购买，特殊情况联系管理员协商。</td>
+</tr>
+<tr>
+<td>展示截图里的人是真实的吗？</td>
+<td>不是。姓名、证件号、单位名称、信用代码、银行卡号和联系方式都是占位或星号，仅用于界面展示。</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="十二注意事项">十二、注意事项与隐私</h2>
+<ol>
+<li>本应用为个人开发的非官方学习工具，与税务机关无关，<strong>不能用于真实申报</strong></li>
+<li>请勿在应用内填写真实身份证号、银行卡号等敏感信息，演示数据即可</li>
+<li>展示站不提供安装包；安装包、激活码和续期只通过管理员发放</li>
+<li>卸载或更换手机会导致本地数据丢失，重要内容请先备份</li>
+<li>展示截图已脱敏，但仍请勿把截图中的占位信息替换成真实个人信息后再传播</li>
+<li>使用前请阅读完整免责声明：<a href="./disclaimer.html">./disclaimer.html</a></li>
+</ol>
+  <div class="foot">
+    本工具为非官方学习演示软件，与税务机关无关联 · <a href="./disclaimer.html">完整免责声明</a> · <a href="./query.html">授权状态查询</a>
+  </div>
+</div>
+</body>
+</html>
