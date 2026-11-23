@@ -1,0 +1,40 @@
+name: Attach V2.0.0 APK to release
+
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: Direct download URL for the APK
+        required: true
+      sha256:
+        description: Expected SHA-256 of the APK
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  attach:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - name: Download APK
+        env:
+          APK_URL: ${{ inputs.url }}
+        run: |
+          curl -fL --retry 5 --retry-all-errors --connect-timeout 20 \
+            -o "$RUNNER_TEMP/geshui_v2.0.0.apk" "$APK_URL"
+
+      - name: Verify size and SHA-256
+        env:
+          EXPECTED_SHA: ${{ inputs.sha256 }}
+        run: |
+          test "$(stat -c%s "$RUNNER_TEMP/geshui_v2.0.0.apk")" = "116415684"
+          echo "$(echo "$EXPECTED_SHA" | tr 'A-F' 'a-f')  $RUNNER_TEMP/geshui_v2.0.0.apk" | sha256sum -c -
+
+      - name: Upload to release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release upload v2.0.0 "$RUNNER_TEMP/geshui_v2.0.0.apk" --clobber
+          gh release view v2.0.0 --json assets --jq '.assets[] | "\(.name) \(.size) \(.state)"'
