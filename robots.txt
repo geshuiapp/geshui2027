@@ -1,4 +1,4 @@
-﻿User-agent: *
+User-agent: *
 Allow: /
 
 Sitemap: https://geshuiapp.github.io/geshui2027/sitemap.xml
