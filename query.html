@@ -121,7 +121,7 @@ button:disabled { opacity: .6; cursor: not-allowed; }
     <label for="deviceId">设备码</label>
     <input id="deviceId" placeholder="例如 3f2a1c8e-9d47-4b6a-8e15-6c0d2a7b5f31" autocomplete="off" spellcheck="false">
     <button id="queryBtn" type="button">查询授权状态</button>
-    <div class="hint">设备码可在 App 的「激活 / 购买」页面点击「复制设备码」获取。</div>
+    <div class="hint">设备码可在 App 的「激活」页面点击「复制设备码」获取。</div>
   </div>
 
   <div class="card" id="result">
@@ -137,7 +137,7 @@ button:disabled { opacity: .6; cursor: not-allowed; }
       <b>查询说明</b><br>
       1. 授权与设备绑定，换设备请联系管理员在后台办理一次性换机。<br>
       2. 首次激活后才有记录，未激活的设备会提示「暂未激活」。<br>
-      3. 每次续期并激活新码后，到期时间会延长，重新查询即可看到最新日期。<br>
+      3. 每次更新授权并激活新码后，到期时间会延长，重新查询即可看到最新日期。<br>
       4. 查询仅读取到期信息，不涉及账号、税务数据。
     </div>
   </div>
@@ -198,14 +198,14 @@ async function query() {
     $badge.className = 'status-badge ' + (permanent ? 'status-permanent' : (active ? 'status-active' : 'status-expired'));
     $badge.textContent = permanent ? '永久有效' : (active ? '授权有效' : '已过期');
     $text.className = 'msg';
-    $text.textContent = permanent ? '终身授权，无需续期' :
-      (active ? '剩余 ' + data.remainingDays + ' 天' : '授权已失效，需要续期');
+    $text.textContent = permanent ? '长期授权，无需更新' :
+      (active ? '剩余 ' + data.remainingDays + ' 天' : '授权已失效，请更新授权');
 
     const rows = [
       ['到期时间', permanent ? '永久有效' : fmtDate(data.expiryDate)],
       ['剩余天数', permanent ? '不限' : (active ? data.remainingDays + ' 天' : '已过期 ' + Math.abs(data.remainingDays) + ' 天')],
       ['首次激活', data.activatedAt ? fmtDate(new Date(data.activatedAt).toISOString()) : '—'],
-      ['续期次数', (data.renewCount || 0) + ' 次']
+      ['授权更新次数', (data.renewCount || 0) + ' 次']
     ];
     $rows.innerHTML = rows.map(r =>
       '<div class="info-row"><span class="k">' + r[0] + '</span><span class="v">' + r[1] + '</span></div>'

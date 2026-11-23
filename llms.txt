@@ -1,14 +1,14 @@
 # 个税界面展示与下载站（geshui2027）
 
-> 个人所得税学习辅助工具的 V2.0.0 展示与下载站。提供 Android APK 与 PDF 手册下载，收录 13 张已脱敏页面截图、7 个功能模块、46 个交互点、7 处长按入口，以及 12 节用户使用说明书和免责声明。非官方工具，不能替代官方办税渠道。
+> 个人所得税学习辅助工具的 V2.0.0 展示与下载站。提供 Android APK 与 PDF 手册下载，收录 12 张已脱敏页面截图、7 个功能模块、46 个交互点、7 处长按入口，以及 12 节用户使用说明书和免责声明。非官方工具，不能替代官方办税渠道。
 
 ## 核心页面
 
-- [首页、界面预览与下载](https://geshuiapp.github.io/geshui2027/)：APK / PDF 下载区、页面介绍、核心功能、V2.0 授权流程、全站交互总表、13 张截图、常见问题、用户使用说明书。
+- [首页、界面预览与下载](https://geshuiapp.github.io/geshui2027/)：APK / PDF 下载区、页面介绍、核心功能、全站交互总表、12 张截图、常见问题、用户使用说明书。
 - [V2.0.0 APK](https://github.com/geshuiapp/geshui2027/releases/download/v2.0.0/geshui_v2.0.0.apk)：Android 安装包，versionCode 28，约 111 MB。
 - [V2.0.0 PDF 手册](https://github.com/geshuiapp/geshui2027/releases/download/v2.0.0/geshui_manual_v2.0.0.pdf)：A4 8 页，首次启动到日常使用。
-- [用户使用说明书](https://geshuiapp.github.io/geshui2027/guide.html)：首次启动、免责声明、三种启动状态、激活、换机、首页、收入纳税明细、我的页面、购买与续期、常见问题。
-- [完整免责声明](https://geshuiapp.github.io/geshui2027/disclaimer.html)：非官方身份、仅供学习、结果仅供参考、禁止传播与非法用途、数据与退款说明。
+- [用户使用说明书](https://geshuiapp.github.io/geshui2027/guide.html)：首次启动、免责声明、三种启动状态、激活、换机、首页、收入纳税明细、我的页面、授权更新、常见问题。
+- [完整免责声明](https://geshuiapp.github.io/geshui2027/disclaimer.html)：非官方身份、仅供学习、结果仅供参考、禁止传播与非法用途、授权与数据说明。
 - [授权状态查询](https://geshuiapp.github.io/geshui2027/query.html)：输入设备码查询授权状态、到期时间与剩余天数，只读到期信息。
 - [V2.0.0 发布页](https://github.com/geshuiapp/geshui2027/releases/tag/v2.0.0)：发布说明、APK 与 PDF 附件。
 
@@ -20,11 +20,11 @@
 - 授权方式：O| 在线激活码，服务端验签并与设备码绑定
 - 试用：新设备 15 分钟一次性试用，联网校验
 - 换机：App 内不提供自助迁移，由管理员后台一次性改绑
-- 数据：业务数据默认只存本机；仅激活、试用、续期、购买申请与反馈联网
+- 数据：业务数据默认只存本机；仅激活、试用、授权申请与反馈联网
 
 ## 页面覆盖
 
-启动页、首页、我的、登录、收入纳税明细查询、结果、详情、新增/修改表单、任职受雇列表与编辑、关于与更新、意见反馈、激活与购买页。
+启动页、首页、我的、登录、收入纳税明细查询、结果、详情、新增/修改表单、任职受雇列表与编辑、关于与更新、意见反馈、激活页。
 
 ## 边界说明
 

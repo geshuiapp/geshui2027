@@ -21,11 +21,6 @@
       <image:title>任职受雇列表界面截图</image:title>
       <image:caption>任职受雇单位列表，长按卡片可修改、复制或删除</image:caption>
     </image:image>
-    <image:image>
-      <image:loc>https://geshuiapp.github.io/geshui2027/screens/40_trial_gate.png</image:loc>
-      <image:title>V2.0 激活与购买页截图</image:title>
-      <image:caption>15 分钟试用、O| 在线激活码与授权时长</image:caption>
-    </image:image>
   </url>
   <url>
     <loc>https://geshuiapp.github.io/geshui2027/guide.html</loc>
