@@ -1,0 +1,35 @@
+name: Trial expiry sweep
+
+on:
+  schedule:
+    # 每 5 分钟扫描一次到期试用，补齐客户端关闭/断网时漏掉的 PushPlus 结束通知
+    - cron: '*/5 * * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+concurrency:
+  group: trial-expiry-sweep
+  cancel-in-progress: true
+
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Sweep expired trials
+        env:
+          CRON_TOKEN: ${{ secrets.CRON_TOKEN }}
+        run: |
+          if [ -z "$CRON_TOKEN" ]; then
+            echo "Missing repository secret CRON_TOKEN"
+            exit 1
+          fi
+          curl --fail-with-body --silent --show-error \
+            --max-time 60 \
+            -X POST \
+            -H "Authorization: Bearer $CRON_TOKEN" \
+            -H "Content-Type: application/json" \
+            --data '{"action":"trial_sweep","limit":1000}' \
+            "https://geshui2027.pages.dev/api/admin?action=trial_sweep"
