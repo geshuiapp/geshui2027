@@ -9,6 +9,9 @@ on:
       sha256:
         description: Expected SHA-256 of the APK
         required: true
+      size:
+        description: Expected exact size in bytes
+        required: true
 
 permissions:
   contents: write
@@ -28,8 +31,9 @@ jobs:
       - name: Verify size and SHA-256
         env:
           EXPECTED_SHA: ${{ inputs.sha256 }}
+          EXPECTED_SIZE: ${{ inputs.size }}
         run: |
-          test "$(stat -c%s "$RUNNER_TEMP/geshui_v2.0.0.apk")" = "116415684"
+          test "$(stat -c%s "$RUNNER_TEMP/geshui_v2.0.0.apk")" = "$EXPECTED_SIZE"
           echo "$(echo "$EXPECTED_SHA" | tr 'A-F' 'a-f')  $RUNNER_TEMP/geshui_v2.0.0.apk" | sha256sum -c -
 
       - name: Upload to release
