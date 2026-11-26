@@ -31,7 +31,8 @@
 | 内容 | 地址 |
 |---|---|
 | Android APK（V2.1.0） | <https://github.com/geshuiapp/geshui2027/releases/download/v2.1.0/geshui_v2.1.0.apk> |
-| 备用下载（7z 压缩包，无需提取码） | <https://github.com/geshuiapp/geshui2027/releases/download/v2.1.0/Geshui-2.1.0-APK.7z> |
+| GitHub 备用（7z 压缩包，无需提取码） | <https://github.com/geshuiapp/geshui2027/releases/download/v2.1.0/Geshui-2.1.0-APK.7z> |
+| 蓝奏云备用（7z，提取码 `70bm`） | <https://wwbtq.lanzoub.com/iS6HL4heez0f> |
 | PDF 使用手册（A4 10 页） | <https://github.com/geshuiapp/geshui2027/releases/download/v2.1.0/geshui_manual_v2.1.0.pdf> |
 | 在线说明书 / 免责声明 / 授权查询 | <https://geshuiapp.github.io/geshui2027/> |
 
