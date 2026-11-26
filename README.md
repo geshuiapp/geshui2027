@@ -41,5 +41,5 @@
 ## 免责
 
 个人独立开发的非官方学习工具，与国家税务总局、各级税务机关、电子税务局及任何政府平台无隶属、合作、授权或认证关系；截图均为脱敏占位数据，计算结果仅供参考。
-完整条款见 [disclaimer.html](https://geshuiapp.github.io/geshui2027/disclaimer.html)。联系方式：531707@gmail.com
+完整条款见 [disclaimer.html](https://geshuiapp.github.io/geshui2027/disclaimer.html)。联系方式：[GitHub Issues](https://github.com/geshuiapp/geshui2027/issues)
 
