@@ -1,10 +1,10 @@
-# Geshui · 个人所得税 App 界面复刻练习版
+﻿# Geshui · 个人所得税 App 界面复刻练习版
 
 > 按个人所得税 App 的界面与操作习惯做的本地练习工具：可以自己录入、修改收入与扣除数据，看计算结果，全部数据只存在本机。个人独立开发，非官方，不能替代官方办税渠道。
 
 **在线地址：** <https://geshuiapp.github.io/geshui2027/>
 **本仓库：** Gitee 说明与截图镜像（<https://gitee.com/geshuiapp/geshui2027>），安装包与手册统一放在 GitHub Release
-**当前版本：** V2.0.8（Android 7.0+，versionCode 36）
+**当前版本：** V2.1.0（Android 7.0+，versionCode 37）
 
 | 首页 | 收入纳税明细 | 我的 |
 |---|---|---|
@@ -30,12 +30,12 @@
 
 | 内容 | 地址 |
 |---|---|
-| Android APK（V2.0.8） | <https://github.com/geshuiapp/geshui2027/releases/download/v2.0.8/geshui_v2.0.8.apk> |
-| 蓝奏云备用下载（7z 压缩包，提取码 fymk） | <https://wwbtq.lanzoub.com/iDafN4hdwwaj> |
-| PDF 使用手册（A4 10 页） | <https://github.com/geshuiapp/geshui2027/releases/download/v2.0.8/geshui_manual_v2.0.8.pdf> |
+| Android APK（V2.1.0） | <https://github.com/geshuiapp/geshui2027/releases/download/v2.1.0/geshui_v2.1.0.apk> |
+| 备用下载（7z 压缩包，无需提取码） | <https://github.com/geshuiapp/geshui2027/releases/download/v2.1.0/Geshui-2.1.0-APK.7z> |
+| PDF 使用手册（A4 10 页） | <https://github.com/geshuiapp/geshui2027/releases/download/v2.1.0/geshui_manual_v2.1.0.pdf> |
 | 在线说明书 / 免责声明 / 授权查询 | <https://geshuiapp.github.io/geshui2027/> |
 
-只提供 V2.0.8 一个版本，旧版本入口已全部关闭。
+只提供 V2.1.0 一个版本，旧版本入口已全部关闭。
 
 
 ## 免责
