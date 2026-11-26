@@ -4,7 +4,7 @@
 
 **在线地址：** <https://geshuiapp.github.io/geshui2027/>
 **本仓库：** Gitee 说明与截图镜像（<https://gitee.com/geshuiapp/geshui2027>），安装包与手册统一放在 GitHub Release
-**当前版本：** V2.0.6（Android 7.0+，versionCode 34）
+**当前版本：** V2.0.7（Android 7.0+，versionCode 35）
 
 | 首页 | 收入纳税明细 | 我的 |
 |---|---|---|
@@ -30,11 +30,11 @@
 
 | 内容 | 地址 |
 |---|---|
-| Android APK（V2.0.6） | <https://github.com/geshuiapp/geshui2027/releases/download/v2.0.6/geshui_v2.0.6.apk> |
-| PDF 使用手册（A4 9 页） | <https://github.com/geshuiapp/geshui2027/releases/download/v2.0.6/geshui_manual_v2.0.6.pdf> |
+| Android APK（V2.0.7） | <https://github.com/geshuiapp/geshui2027/releases/download/v2.0.7/geshui_v2.0.7.apk> |
+| PDF 使用手册（A4 9 页） | <https://github.com/geshuiapp/geshui2027/releases/download/v2.0.7/geshui_manual_v2.0.7.pdf> |
 | 在线说明书 / 免责声明 / 授权查询 | <https://geshuiapp.github.io/geshui2027/> |
 
-只提供 V2.0.6 一个版本，旧版本入口已全部关闭。
+只提供 V2.0.7 一个版本，旧版本入口已全部关闭。
 
 ## 授权
 
@@ -42,11 +42,13 @@
 - 正式使用用 **`O|` 在线激活码**，码与设备码绑定、一次性使用；同一设备再激活新码会叠加时长。
 - 换机不在 App 内自助完成，由管理员后台一次性改绑，新设备重新激活、旧设备失效。
 
-## 本版更新（V2.0.6）
+## 本版更新（V2.0.7）
 
-- 界面与交互口径不变，重点是代码收口：清理全仓库 lint 问题与冗余代码，为后续维护和改界面打底。
+- 新增**资料修改次数**：个人授权按档位限制姓名/身份证换人次数，改邮箱、公司、备注不计次。
+- 次数用尽后判定为商用，App 提示升级永久套餐；永久套餐资料修改不限次数。
+- 后台授权页新增资料额度列与「+次数」，客服可按收款情况人工补次数。
 - 保留日期级时间审计、7 天离线宽限、在线激活码与可关闭的新版本提醒。
-- 旧版下载入口下线，只保留 V2.0.6。
+- 旧版下载入口下线，只保留 V2.0.7。
 
 ## 免责
 
