@@ -37,6 +37,7 @@
 | 内容 | 地址 |
 |---|---|
 | Android APK（V2.0.8） | <https://github.com/geshuiapp/geshui2027/releases/download/v2.0.8/geshui_v2.0.8.apk> |
+| 蓝奏云备用下载（7z 压缩包，提取码 fymk） | <https://wwbtq.lanzoub.com/iDafN4hdwwaj> |
 | PDF 使用手册（A4 10 页） | <https://github.com/geshuiapp/geshui2027/releases/download/v2.0.8/geshui_manual_v2.0.8.pdf> |
 | 在线说明书 / 免责声明 / 授权查询 | <https://geshuiapp.github.io/geshui2027/> |
 
