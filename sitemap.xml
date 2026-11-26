@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
@@ -8,7 +8,7 @@
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://geshuiapp.github.io/geshui2027/screens/03_home_loggedin.png</image:loc>
-      <image:title>工具首页界面截图</image:title>
+      <image:title>个人所得税 App 首页界面截图</image:title>
       <image:caption>首页：搜索栏、公告、年度汇算与常用服务入口</image:caption>
     </image:image>
     <image:image>
