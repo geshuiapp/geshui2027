@@ -6,11 +6,11 @@ on:
       tag:
         description: Release tag
         required: true
-        default: v2.0.8
+        default: v2.0.7
       name:
         description: Asset file name
         required: true
-        default: geshui_v2.0.8.apk
+        default: geshui_v2.0.7.apk
       url:
         description: Direct download URL for the APK
         required: true
