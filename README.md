@@ -4,7 +4,7 @@
 
 **在线地址：** <https://geshuiapp.github.io/geshui2027/>
 **本仓库：** Gitee 说明与截图镜像（<https://gitee.com/geshuiapp/geshui2027>），安装包与手册统一放在 GitHub Release
-**当前版本：** V2.0.7（Android 7.0+，versionCode 35）
+**当前版本：** V2.0.8（Android 7.0+，versionCode 36）
 
 | 首页 | 收入纳税明细 | 我的 |
 |---|---|---|
@@ -26,15 +26,21 @@
 - **首页背景图与热区**：换成自己的图，拖动调整可点击区域，也能一键恢复默认图和默认热区。
 - **意见反馈**：提交文字反馈并查看自己的历史反馈。
 
+## 本版更新（V2.0.8）
+
+- **日期校准修复**：自动剔除返回缓存时间头的异常时间源，不再因为单个源偏差导致长期显示“尚未校准”；未校准成功时按短间隔重试。
+- **更新入口常驻**：启动更新提示点“稍后”后，仍可在「我的 → 关于&更新」重新检查更新或打开下载页；版本公告也提供“去下载”按钮。
+- **资料修改次数提示**：授权申请页增加个人授权仅限本人、换人扣次、永久授权不限次数的提示，非永久档提交前会二次确认；额度用尽时提供联系客服入口。
+
 ## 下载
 
 | 内容 | 地址 |
 |---|---|
-| Android APK（V2.0.7） | <https://github.com/geshuiapp/geshui2027/releases/download/v2.0.7/geshui_v2.0.7.apk> |
-| PDF 使用手册（A4 9 页） | <https://github.com/geshuiapp/geshui2027/releases/download/v2.0.7/geshui_manual_v2.0.7.pdf> |
+| Android APK（V2.0.8） | <https://github.com/geshuiapp/geshui2027/releases/download/v2.0.8/geshui_v2.0.8.apk> |
+| PDF 使用手册（A4 10 页） | <https://github.com/geshuiapp/geshui2027/releases/download/v2.0.8/geshui_manual_v2.0.8.pdf> |
 | 在线说明书 / 免责声明 / 授权查询 | <https://geshuiapp.github.io/geshui2027/> |
 
-只提供 V2.0.7 一个版本，旧版本入口已全部关闭。
+只提供 V2.0.8 一个版本，旧版本入口已全部关闭。
 
 
 ## 免责

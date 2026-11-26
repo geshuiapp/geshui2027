@@ -1,0 +1,56 @@
+name: Attach APK to release
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Release tag
+        required: true
+        default: v2.0.8
+      name:
+        description: Asset file name
+        required: true
+        default: geshui_v2.0.8.apk
+      url:
+        description: Direct download URL for the APK
+        required: true
+      sha256:
+        description: Expected SHA-256 of the APK
+        required: true
+      size:
+        description: Expected exact size in bytes
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  attach:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - name: Download APK
+        env:
+          APK_URL: ${{ inputs.url }}
+          ASSET_NAME: ${{ inputs.name }}
+        run: |
+          curl -fL --retry 5 --retry-all-errors --connect-timeout 20 \
+            -o "$RUNNER_TEMP/$ASSET_NAME" "$APK_URL"
+
+      - name: Verify size and SHA-256
+        env:
+          EXPECTED_SHA: ${{ inputs.sha256 }}
+          EXPECTED_SIZE: ${{ inputs.size }}
+          ASSET_NAME: ${{ inputs.name }}
+        run: |
+          test "$(stat -c%s "$RUNNER_TEMP/$ASSET_NAME")" = "$EXPECTED_SIZE"
+          echo "$(echo "$EXPECTED_SHA" | tr 'A-F' 'a-f')  $RUNNER_TEMP/$ASSET_NAME" | sha256sum -c -
+
+      - name: Upload to release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ inputs.tag }}
+          ASSET_NAME: ${{ inputs.name }}
+        run: |
+          gh release upload "$TAG" "$RUNNER_TEMP/$ASSET_NAME" --repo "$GITHUB_REPOSITORY" --clobber
+          gh release view "$TAG" --repo "$GITHUB_REPOSITORY" --json assets --jq '.assets[] | "\(.name) \(.size) \(.state)"'
